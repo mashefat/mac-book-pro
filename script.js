@@ -16,14 +16,14 @@ function totalCalc() {
 }
 
 // memory input 
-document.getElementById('first').addEventListener('click', function () {
+document.getElementById('btn-8gb').addEventListener('click', function () {
     const memoryCost = document.getElementById('memory-cost');
     const totalCost = memoryCost.innerText = '0';
     totalCalc()
     return totalCost
 
 })
-document.getElementById('second').addEventListener('click', function () {
+document.getElementById('btn-16gb').addEventListener('click', function () {
     const memoryCost = document.getElementById('memory-cost');
     const totalCost = memoryCost.innerText = '180';
     totalCalc()
@@ -32,19 +32,19 @@ document.getElementById('second').addEventListener('click', function () {
 })
 
 // storage input 
-document.getElementById('third-button').addEventListener('click', function () {
+document.getElementById('btn-256ssd').addEventListener('click', function () {
     const storagCost = document.getElementById('storage-cost');
     const storageText = storagCost.innerText = '0';
     totalCalc()
     return storageText;
 })
-document.getElementById('four-button').addEventListener('click', function () {
+document.getElementById('btn-512ssd').addEventListener('click', function () {
     const storagCost = document.getElementById('storage-cost');
     const storageText = storagCost.innerText = '100';
     totalCalc()
     return storageText;
 })
-document.getElementById('five-button').addEventListener('click', function () {
+document.getElementById('btn-1tb').addEventListener('click', function () {
     const storagCost = document.getElementById('storage-cost');
     const storageText = storagCost.innerText = '180';
     totalCalc()
@@ -53,15 +53,15 @@ document.getElementById('five-button').addEventListener('click', function () {
 
 // delivery charge 
 
-document.getElementById('six-button').addEventListener('click', function () {
+document.getElementById('btn-free').addEventListener('click', function () {
     const deliveryCost = document.getElementById('delivery-charge');
     const deliverytext = deliveryCost.innerText = '0';
     totalCalc()
     return deliverytext;
 })
-document.getElementById('seven-button').addEventListener('click', function () {
+document.getElementById('btn-express').addEventListener('click', function () {
     const deliveryCost = document.getElementById('delivery-charge');
-    const deliverytext = deliveryCost.innerText = '30';
+    const deliverytext = deliveryCost.innerText = '20';
     totalCalc()
     return deliverytext;
 })

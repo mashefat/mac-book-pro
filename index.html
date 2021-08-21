@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mac Book Pro</title>
-    <!-- stylesheets -->
-    <link rel="stylesheet" href="style.css">
+    <!-- favicon  -->
+    <link rel="shortcut icon" href="./img/macbook.png" type="image/x-icon">
     <!-- tailwindCss -->
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 
@@ -23,7 +23,7 @@
             <div>
                 <div class="grid grid-cols-2">
                     <div class="w-2/3 mx-auto">
-                        <img src="./img/mac.png" alt="">
+                        <img class="w-100" src="./img/macbook.png" alt="">
                     </div>
                     <div class="mr-10">
                         <h1 class="text-3xl">Customize your Blue 24-inch iMac with Apple M1 chip.</h1>
@@ -36,22 +36,22 @@
                         <!-- memory -->
                         <div class="mt-5">
                             <h3 class="mb-1 text-xl">Memory</h3>
-                            <button id="first" class="bg-green-300 hover:bg-green-500 text-l px-4 rounded ">8GB unified memory</button>
-                            <button id="second" class="bg-green-300 hover:bg-green-500 text-l px-4 rounded ">16GB unified memory</button>
+                            <button id="btn-8gb" class="bg-green-300 hover:bg-green-500 text-l px-4 rounded ">8GB unified memory</button>
+                            <button id="btn-16gb" class="bg-green-300 hover:bg-green-500 text-l px-4 rounded ">16GB unified memory</button>
                         </div>
                         <!-- storage  -->
                         <div class="mt-5">
                             <h3 class="text-xl">Storage</h3>
-                            <button id="third-button" class="bg-green-300 hover:bg-green-500 text-l px-4 rounded ">256GB SSD storage</button>
-                            <button id="four-button" class="bg-green-300 hover:bg-green-500 text-l px-4 rounded ">112GB SSD storage</button>
-                            <button id="five-button" class="bg-green-300 hover:bg-green-500 text-l px-4 rounded ">1TB SSD storage</button>
+                            <button id="btn-256ssd" class="bg-green-300 hover:bg-green-500 text-l px-4 rounded ">256GB SSD storage</button>
+                            <button id="btn-512ssd" class="bg-green-300 hover:bg-green-500 text-l px-4 rounded ">112GB SSD storage</button>
+                            <button id="btn-1tb" class="bg-green-300 hover:bg-green-500 text-l px-4 rounded ">1TB SSD storage</button>
                         </div>
                         <!-- delivery option  -->
                         <div class="mt-5 mb-2">
                             <h3 class="mb-1 text-xl">Choose your delivery option</h3>
-                            <button id="six-button" class="bg-green-300 hover:bg-green-500 text-l px-4 rounded ">Aug 25 FREE
+                            <button id="btn-free" class="bg-green-300 hover:bg-green-500 text-l px-4 rounded ">Aug 25 FREE
                                 Delivery</button>
-                            <button id="seven-button" class="bg-green-300 hover:bg-green-500 text-l px-4 rounded ">Aug 21
+                            <button id="btn-express" class="bg-green-300 hover:bg-green-500 text-l px-4 rounded ">Aug 21
                                 Delivery charged
                                 $20</button>
                         </div>
@@ -87,18 +87,18 @@
                             <!-- apply input  -->
                             <div class="mt-3">
                                 <h4>Add Promo code</h4>
-                                <input class="border-2" type="text">
+                                <input class="border-2" type="text" placeholder="Type promo code" id="delete-confirm">
                                 <button class="bg-red-500 hover:bg-red-600 hover:text-white py-1 px-6 mx-1 rounded" type="submit">Apply</button>
                             </div>
                         </div>
                        
                     </div>
                 </div>
-                <hr>
+            </div>
+            <hr>
                 <div class="mb-4">
                     <h1 class=" text-center text-2xl text-bold">Total: $<span id="total">1299</span></h1>
                 </div>
-            </div>
         </section>
     </main>
 
